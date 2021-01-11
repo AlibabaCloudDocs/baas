@@ -1,0 +1,77 @@
+# DescribeAntChainNodesV2
+
+查询一条蚂蚁区块链的节点信息列表（仅适用于阿里云国内站）
+
+## 调试
+
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Baas&api=DescribeAntChainNodesV2&type=RPC&version=2018-12-21)
+
+## 请求参数
+
+|名称|类型|是否必选|示例值|描述|
+|--|--|----|---|--|
+|Action|String|是|DescribeAntChainNodesV2|系统规定参数。取值：DescribeAntChainNodesV2。 |
+|AntChainId|String|是|8bd720bde18c4b37b0f4a1c7834db163|区块链ID |
+|RegionId|String|否|cn-hangzhou|地域ID，限制cn-hangzhou |
+|ConsortiumId|String|否|M8GaMEyX|联盟ID |
+
+## 返回数据
+
+|名称|类型|示例值|描述|
+|--|--|---|--|
+|Code|String|OK|返回码 |
+|HttpStatusCode|String|200|请求返回码 |
+|Message|String|OK|请求消息 |
+|RequestId|String|D68D66B6-1964-4073-8714-B49F5EF1AEFC|请求ID |
+|Result|List|\[\]|请求结果 |
+|ResultCode|String|OK|结果码 |
+|ResultMessage|String|OK|结果消息 |
+|Success|Boolean|true|结果状态 |
+
+## 示例
+
+请求示例
+
+```
+http(s)://[Endpoint]/?Action=DescribeAntChainNodesV2
+&<公共请求参数>
+```
+
+正常返回示例
+
+`XML` 格式
+
+```
+<RequestId>9567607B-BE1E-41C4-B75E-F943A3A9873F</RequestId>
+<HttpStatusCode>200</HttpStatusCode>
+<Code>OK</Code>
+<ResultCode>OK</ResultCode>
+<Success>true</Success>
+<Result>{"endpoints":[{"ip":"8.136.158.115","port":"18130"}],"nodeId":"0x185F7D2745FFB31E43082771A64222E944F125533C8D444B8AB44996D20EAEE5","nodeState":2,"nodeType":1,"publicKey":"0x44E20E98EFA8BD07A96741B072E14AE6EBEBC040B8C12D7C7D1F9CFDEE291C5500D34C375E2CFACEC8FEFE02C7C9BF9BFE662D735915A80350BBEE513A86423C"}</Result>
+<Result>{"endpoints":[{"ip":"8.136.158.115","port":"18131"}],"nodeId":"0xC655B510DD9C9688886EC04D443DA531C1230DEFDF2C3C3F617C71F0D448E84A","nodeState":2,"nodeType":1,"publicKey":"0xCD0FBD1597BFC2418BE182A38A420C9C4585B174A70A64EECF4B04DEE034F4A9AF9B509D972333AE23A21782E81A91F26F61FAC3522E16D7BD764E6302F18B06"}</Result>
+<Result>{"endpoints":[{"ip":"8.136.158.115","port":"18132"}],"nodeId":"0x437BCC0B400878F2F9C11430F37BE0A5FF3939BE9DD9E0F9F4CE854A1B68BBC1","nodeState":2,"nodeType":1,"publicKey":"0x191191EE32D7617E66B609A4EE52ED60D64BC0B61261B984BCCF1F23062EE28CA25C27F9FC774DD5DAB65F35C4A1F956910E9B10EE66CFFFC8DF5D5833CCDDAF"}</Result>
+<Result>{"endpoints":[{"ip":"8.136.158.115","port":"18133"}],"nodeId":"0x82D6E793F119F988EDCDBC0BDE6B632D4E35B7270B3787A6846493BD196E4CD8","nodeState":2,"nodeType":1,"publicKey":"0x3625934D17B49B41CC8AB152CA1E458E32E2BD9F8F2902BEE073BD5F78C0C10E07A17377AD95B0C83752C6193BBC920B533FB72A32CD42067969BCEC8F062134"}</Result>
+```
+
+`JSON` 格式
+
+```
+{
+  "RequestId": "9567607B-BE1E-41C4-B75E-F943A3A9873F",
+  "HttpStatusCode": "200",
+  "Code": "OK",
+  "ResultCode": "OK",
+  "Success": true,
+  "Result": [
+    "{\"endpoints\":[{\"ip\":\"8.136.158.115\",\"port\":\"18130\"}],\"nodeId\":\"0x185F7D2745FFB31E43082771A64222E944F125533C8D444B8AB44996D20EAEE5\",\"nodeState\":2,\"nodeType\":1,\"publicKey\":\"0x44E20E98EFA8BD07A96741B072E14AE6EBEBC040B8C12D7C7D1F9CFDEE291C5500D34C375E2CFACEC8FEFE02C7C9BF9BFE662D735915A80350BBEE513A86423C\"}",
+    "{\"endpoints\":[{\"ip\":\"8.136.158.115\",\"port\":\"18131\"}],\"nodeId\":\"0xC655B510DD9C9688886EC04D443DA531C1230DEFDF2C3C3F617C71F0D448E84A\",\"nodeState\":2,\"nodeType\":1,\"publicKey\":\"0xCD0FBD1597BFC2418BE182A38A420C9C4585B174A70A64EECF4B04DEE034F4A9AF9B509D972333AE23A21782E81A91F26F61FAC3522E16D7BD764E6302F18B06\"}",
+    "{\"endpoints\":[{\"ip\":\"8.136.158.115\",\"port\":\"18132\"}],\"nodeId\":\"0x437BCC0B400878F2F9C11430F37BE0A5FF3939BE9DD9E0F9F4CE854A1B68BBC1\",\"nodeState\":2,\"nodeType\":1,\"publicKey\":\"0x191191EE32D7617E66B609A4EE52ED60D64BC0B61261B984BCCF1F23062EE28CA25C27F9FC774DD5DAB65F35C4A1F956910E9B10EE66CFFFC8DF5D5833CCDDAF\"}",
+    "{\"endpoints\":[{\"ip\":\"8.136.158.115\",\"port\":\"18133\"}],\"nodeId\":\"0x82D6E793F119F988EDCDBC0BDE6B632D4E35B7270B3787A6846493BD196E4CD8\",\"nodeState\":2,\"nodeType\":1,\"publicKey\":\"0x3625934D17B49B41CC8AB152CA1E458E32E2BD9F8F2902BEE073BD5F78C0C10E07A17377AD95B0C83752C6193BBC920B533FB72A32CD42067969BCEC8F062134\"}"
+  ]
+}
+```
+
+## 错误码
+
+访问[错误中心](https://error-center.aliyun.com/status/product/Baas)查看更多错误码。
+
