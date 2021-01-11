@@ -1,0 +1,100 @@
+# DescribeAntChainTransactionStatisticsV2
+
+查询一条蚂蚁区块链的交易统计信息（仅适用于阿里云国内站）
+
+## 调试
+
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Baas&api=DescribeAntChainTransactionStatisticsV2&type=RPC&version=2018-12-21)
+
+## 请求参数
+
+|名称|类型|是否必选|示例值|描述|
+|--|--|----|---|--|
+|Action|String|是|DescribeAntChainTransactionStatisticsV2|系统规定参数。取值：DescribeAntChainTransactionStatisticsV2。 |
+|AntChainId|String|是|8bd720bde18c4b37b0f4a1c7834db163|区块链ID |
+|Start|Long|否|1609084800000|统计开始时间 |
+|End|Long|否|1609776000000|统计结束时间 |
+|RegionId|String|否|cn-hangzhou|地域ID，限制cn-hangzhou |
+|ConsortiumId|String|否|M8GaMEyX|联盟ID |
+
+## 返回数据
+
+|名称|类型|示例值|描述|
+|--|--|---|--|
+|Code|String|OK|返回码 |
+|HttpStatusCode|String|200|请求返回码 |
+|Message|String|OK|请求消息 |
+|RequestId|String|D68D66B6-1964-4073-8714-B49F5EF1AEFC|请求ID |
+|Result|Array of Result| |请求结果 |
+|AntChainId|String|8bd720bde18c4b37b0f4a1c7834db163|区块链ID |
+|CreatTime|Long|1609258222000|创建时间 |
+|Dt|Long|1609171200000|时间 |
+|LastSumBlockHeight|Long|11511|最后统计的区块高度 |
+|TransCount|Long|4|交易总量 |
+|ResultCode|String|OK|结果码 |
+|ResultMessage|String|OK|结果消息 |
+|Success|Boolean|true|结果状态 |
+
+## 示例
+
+请求示例
+
+```
+http(s)://[Endpoint]/?Action=DescribeAntChainTransactionStatisticsV2
+&<公共请求参数>
+```
+
+正常返回示例
+
+`XML` 格式
+
+```
+<RequestId>EC6752BA-90E9-4B03-94D5-126021CB8D61</RequestId>
+<HttpStatusCode>200</HttpStatusCode>
+<Code>OK</Code>
+<ResultCode>OK</ResultCode>
+<Success>true</Success>
+<Result>
+    <Dt>1609171200000</Dt>
+    <CreatTime>1609258222000</CreatTime>
+    <TransCount>4</TransCount>
+    <LastSumBlockHeight>11511</LastSumBlockHeight>
+</Result>
+<Result>
+    <Dt>1609257600000</Dt>
+    <CreatTime>1609344622000</CreatTime>
+    <TransCount>0</TransCount>
+    <LastSumBlockHeight>40306</LastSumBlockHeight>
+</Result>
+```
+
+`JSON` 格式
+
+```
+{
+  "RequestId": "EC6752BA-90E9-4B03-94D5-126021CB8D61",
+  "HttpStatusCode": "200",
+  "Code": "OK",
+  "ResultCode": "OK",
+  "Success": true,
+  "Result": [
+    {
+      "Dt": 1609171200000,
+      "CreatTime": 1609258222000,
+      "TransCount": 4,
+      "LastSumBlockHeight": 11511
+    },
+    {
+      "Dt": 1609257600000,
+      "CreatTime": 1609344622000,
+      "TransCount": 0,
+      "LastSumBlockHeight": 40306
+    }
+  ]
+}
+```
+
+## 错误码
+
+访问[错误中心](https://error-center.aliyun.com/status/product/Baas)查看更多错误码。
+
