@@ -25,7 +25,7 @@
 |RequestId|String|980061FC-058D-4298-8598-D9DDB10D0ED4|请求ID |
 |Result|Struct| |请求结果 |
 |AntChainId|String|8bd720bde18c4b37b0f4a1c7834db163|区块链ID |
-|AuthorizationType|String|ALL\_USER\_AUTHORIZATION|授权类型， 当前可选值 为 ALL\_USER\_AUTHORIZATION 代表授权所有用户，SPECIFIC\_USER\_AUTHORIZATION 代表授权部分用户，UNAUTHORIZED 代表未授权 |
+|AuthorizationType|String|ALL\_USER\_AUTHORIZATION|授权类型， 当前可选值为 ALL\_USER\_AUTHORIZATION 代表授权所有用户，SPECIFIC\_USER\_AUTHORIZATION 代表授权部分用户，UNAUTHORIZED 代表未授权 |
 |QRCodeType|String|MINI\_APP\_BROWSER\_TRANSACTION|二维码类型，当前可以选值为 MINI\_APP\_BROWSER\_TRANSACTION 代表支付宝小程序区块链浏览器。 |
 |ResultCode|String|OK|结果码 |
 |ResultMessage|String|OK|结果消息 |
@@ -42,7 +42,7 @@ http(s)://[Endpoint]/?Action=DescribeAntChainQRCodeAuthorizationV2
 
 正常返回示例
 
-`XML` 格式
+`XML`格式
 
 ```
 <RequestId>980061FC-058D-4298-8598-D9DDB10D0ED4</RequestId>
@@ -56,7 +56,7 @@ http(s)://[Endpoint]/?Action=DescribeAntChainQRCodeAuthorizationV2
 </Result>
 ```
 
-`JSON` 格式
+`JSON`格式
 
 ```
 {
