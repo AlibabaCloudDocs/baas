@@ -27,7 +27,7 @@
 |RequestId|String|D68D66B6-1964-4073-8714-B49F5EF1AEFC|请求ID |
 |Result|Struct| |请求结果 |
 |AntChainId|String|4505A1E4-0EDD-4A02-A4D7-B49219328D49|区块链ID |
-|AuthorizationType|String|SPECIFIC\_USER\_AUTHORIZATION|授权类型， 当前可选值 为 ALL\_USER\_AUTHORIZATION 代表授权所有用户，SPECIFIC\_USER\_AUTHORIZATION 代表授权部分用户，UNAUTHORIZED 代表未授权 |
+|AuthorizationType|String|SPECIFIC\_USER\_AUTHORIZATION|授权类型， 当前可选值为 ALL\_USER\_AUTHORIZATION 代表授权所有用户，SPECIFIC\_USER\_AUTHORIZATION 代表授权部分用户，UNAUTHORIZED 代表未授权 |
 |AuthorizedUserList|Array of AuthorizedUserList| |授权用户列表 |
 |GmtAuthorized|String|2021-01-07 10:55:42|授权时间 |
 |Phone|String|13800138011|被授权手机号 |
@@ -51,7 +51,7 @@ http(s)://[Endpoint]/?Action=DescribeAntChainMiniAppBrowserQRCodeAuthorizedUsers
 
 正常返回示例
 
-`XML` 格式
+`XML`格式
 
 ```
 <RequestId>4505A1E4-0EDD-4A02-A4D7-B49219328D49</RequestId>
@@ -75,7 +75,7 @@ http(s)://[Endpoint]/?Action=DescribeAntChainMiniAppBrowserQRCodeAuthorizedUsers
 </Result>
 ```
 
-`JSON` 格式
+`JSON`格式
 
 ```
 {
