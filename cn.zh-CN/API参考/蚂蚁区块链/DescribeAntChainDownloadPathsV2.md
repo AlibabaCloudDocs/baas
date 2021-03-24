@@ -43,7 +43,7 @@ http(s)://[Endpoint]/?Action=DescribeAntChainDownloadPathsV2
 
 正常返回示例
 
-`XML` 格式
+`XML`格式
 
 ```
 <RequestId>3213170D-59A5-44CE-8837-37313317690A</RequestId>
@@ -53,13 +53,13 @@ http(s)://[Endpoint]/?Action=DescribeAntChainDownloadPathsV2
 <Success>true</Success>
 <Result>
     <SdkUrl>https://help.aliyun.com/document_detail/154544.html?spm=5176.11638311.0.0.75d54a924Ptnt9</SdkUrl>
-    <TrustCaUrl>https://mychain-baas-oss.oss-cn-shanghai.aliyuncs.com/mvp_8bd720bde18c4b37b0f4a1c7834db163_mychain010/trustCa?Expires=1609989075&amp;OSSAccessKeyId=LTAI4G6VCwi7xUigc3hcNUZR&amp;Signature=13q9CULCT4kG%2FkJPTA%2Fn3GlYzLc%3D&amp;response-content-disposition=attachment%3B%20filename%3DtrustCa</TrustCaUrl>
-    <CaCrtUrl>https://mychain-baas-oss.oss-cn-shanghai.aliyuncs.com/mvp_8bd720bde18c4b37b0f4a1c7834db163_mychain010/ca.crt?Expires=1609989075&amp;OSSAccessKeyId=LTAI4G6VCwi7xUigc3hcNUZR&amp;Signature=8drsyeYi8wQmiVvnLNZ2%2FnuYdRs%3D&amp;response-content-disposition=attachment%3B%20filename%3Dca.crt</CaCrtUrl>
-    <ClientCrtUrl>https://mychain-baas-oss.oss-cn-shanghai.aliyuncs.com/aliyun_8bd720bde18c4b37b0f4a1c7834db163_mychain010/certificate/3a6bd8d8dec087aff737e3b92dfac034b35c63c87d3d226e0977f94679615df2.crt?Expires=1609989075&amp;OSSAccessKeyId=LTAI4G6VCwi7xUigc3hcNUZR&amp;Signature=rHkv2TBclPssp69kHmCVZ53OU0k%3D&amp;response-content-disposition=attachment%3B%20filename%3Dclient.crt</ClientCrtUrl>
+    <TrustCaUrl>https://mychain-baas-oss.oss-cn-shanghai.aliyuncs.com/mvp_8bd720bde18c4b37b0f4a1c7834db163_mychain010/trustCa?Expires=1609989075&amp;OSSAccessKeyId=XXXXXXXXX&amp;Signature=13q9CULCT4kG%2FkJPTA%2Fn3GlYzLc%3D&amp;response-content-disposition=attachment%3B%20filename%3DtrustCa</TrustCaUrl>
+    <CaCrtUrl>https://mychain-baas-oss.oss-cn-shanghai.aliyuncs.com/mvp_8bd720bde18c4b37b0f4a1c7834db163_mychain010/ca.crt?Expires=1609989075&amp;OSSAccessKeyId=XXXXXXXXX&amp;Signature=8drsyeYi8wQmiVvnLNZ2%2FnuYdRs%3D&amp;response-content-disposition=attachment%3B%20filename%3Dca.crt</CaCrtUrl>
+    <ClientCrtUrl>https://mychain-baas-oss.oss-cn-shanghai.aliyuncs.com/aliyun_8bd720bde18c4b37b0f4a1c7834db163_mychain010/certificate/3a6bd8d8dec087aff737e3b92dfac034b35c63c87d3d226e0977f94679615df2.crt?Expires=1609989075&amp;OSSAccessKeyId=XXXXXXXXX&amp;Signature=rHkv2TBclPssp69kHmCVZ53OU0k%3D&amp;response-content-disposition=attachment%3B%20filename%3Dclient.crt</ClientCrtUrl>
 </Result>
 ```
 
-`JSON` 格式
+`JSON`格式
 
 ```
 {
@@ -70,9 +70,9 @@ http(s)://[Endpoint]/?Action=DescribeAntChainDownloadPathsV2
   "Success": true,
   "Result": {
     "SdkUrl": "https://help.aliyun.com/document_detail/154544.html?spm=5176.11638311.0.0.75d54a924Ptnt9",
-    "TrustCaUrl": "https://mychain-baas-oss.oss-cn-shanghai.aliyuncs.com/mvp_8bd720bde18c4b37b0f4a1c7834db163_mychain010/trustCa?Expires=1609989075&OSSAccessKeyId=LTAI4G6VCwi7xUigc3hcNUZR&Signature=13q9CULCT4kG%2FkJPTA%2Fn3GlYzLc%3D&response-content-disposition=attachment%3B%20filename%3DtrustCa",
-    "CaCrtUrl": "https://mychain-baas-oss.oss-cn-shanghai.aliyuncs.com/mvp_8bd720bde18c4b37b0f4a1c7834db163_mychain010/ca.crt?Expires=1609989075&OSSAccessKeyId=LTAI4G6VCwi7xUigc3hcNUZR&Signature=8drsyeYi8wQmiVvnLNZ2%2FnuYdRs%3D&response-content-disposition=attachment%3B%20filename%3Dca.crt",
-    "ClientCrtUrl": "https://mychain-baas-oss.oss-cn-shanghai.aliyuncs.com/aliyun_8bd720bde18c4b37b0f4a1c7834db163_mychain010/certificate/3a6bd8d8dec087aff737e3b92dfac034b35c63c87d3d226e0977f94679615df2.crt?Expires=1609989075&OSSAccessKeyId=LTAI4G6VCwi7xUigc3hcNUZR&Signature=rHkv2TBclPssp69kHmCVZ53OU0k%3D&response-content-disposition=attachment%3B%20filename%3Dclient.crt"
+    "TrustCaUrl": "https://mychain-baas-oss.oss-cn-shanghai.aliyuncs.com/mvp_8bd720bde18c4b37b0f4a1c7834db163_mychain010/trustCa?Expires=1609989075&OSSAccessKeyId=XXXXXXXXX&Signature=13q9CULCT4kG%2FkJPTA%2Fn3GlYzLc%3D&response-content-disposition=attachment%3B%20filename%3DtrustCa",
+    "CaCrtUrl": "https://mychain-baas-oss.oss-cn-shanghai.aliyuncs.com/mvp_8bd720bde18c4b37b0f4a1c7834db163_mychain010/ca.crt?Expires=1609989075&OSSAccessKeyId=XXXXXXXXX&Signature=8drsyeYi8wQmiVvnLNZ2%2FnuYdRs%3D&response-content-disposition=attachment%3B%20filename%3Dca.crt",
+    "ClientCrtUrl": "https://mychain-baas-oss.oss-cn-shanghai.aliyuncs.com/aliyun_8bd720bde18c4b37b0f4a1c7834db163_mychain010/certificate/3a6bd8d8dec087aff737e3b92dfac034b35c63c87d3d226e0977f94679615df2.crt?Expires=1609989075&OSSAccessKeyId=XXXXXXXXX&Signature=rHkv2TBclPssp69kHmCVZ53OU0k%3D&response-content-disposition=attachment%3B%20filename%3Dclient.crt"
   }
 }
 ```
